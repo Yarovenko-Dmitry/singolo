@@ -4,63 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>singolo_Ya</title>
+  <!-- <link rel="stylesheet" href="normalize.css"> -->
   <link rel="stylesheet" href="singolo1.css">
 </head>
 <body>
-  <header>
-    <h1>singolo</h1>
-    <div class="logo">
-      <p>singolo<span>*</span></p>
-    </div>
-    <nav class="navigation">
-      <ul class="main-menu">
-        <li><a href="">home</a></li>
-        <li><a href="">services</a></li>
-        <li><a href="">portfolio</a></li>
-        <li><a href="">about</a></li>
-        <li><a href="">contact</a></li>     
-      </ul>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__head">
+        <h1 class="h1">singolo</h1>
 
-    </nav>
-  </header>
-  <main>
-
-    <div class="slider"></div>
-
-    <div class="services">
-      <div class="services__title">
-        <h2>Our Services</h2>
-      </div>
-      
-      <div class="services__description">
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen</p>
-      </div>
-      <div class="services__advantage three-column">
-        <div class="services__column two-item-column">
-          <div class="services__item item">
-            <div class="services__item-icon item__first-subcolumn"></div>
-
-            <div class="services__item-icon item__second-subcolumn">
-              <div class="item__title">
-                <p>Custom Design</p>
-              </div>
-
-              <div class="item__description">
-                <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in qua</p>
-              </div>              
-            </div>
-
-          </div>
-          <div class="services__item"></div>        
+        <div class="logo">
+          <p class="logo-text">singolo<span class="asterisk">*</span></p>
         </div>
 
-        
-       
+        <nav class="navigation">
+          <ul class="main-menu">
+            <li><a href="" class="link-home">home</a><div class="point"></div></li>            
+            <li><a href="" class="link-services">services</a><div class="point"></div></li>            
+            <li><a href="" class="link-portfolio">portfolio</a><div class="point"></div></li>           
+            <li><a href="" class="link-about">about</a><div class="point"></div></li> 
+            <li><a href="" class="link-contact">contact</a></li>     
+          </ul>
+        </nav>
       </div>
-    </div>
 
-</main>
+      <div class="header__bottom"></div>
+    </header>
 
-  
+    <main>
+      <div class="slider">
+        
+        <div class="arrow"></div>
+        <div class="phone"></div>
+        <div class="phone phone_horizontal"></div>
+        <div class="arrow arrow_right"></div>
+      </div>
+
+      <div class="services">
+        <div class="services__title">
+          <h2>Our Services</h2>
+        </div>
+        
+        <div class="services__description">
+          <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen</p>
+        </div>
+
+        <div class="services__advantage three-column">
+          <div class="services__column two-item-column">
+            <div class="services__item item">
+              <div class="services__item-icon item__first-subcolumn"></div>
+
+              <div class="services__item-icon item__second-subcolumn">
+                <div class="item__title">
+                  <p>Custom Design</p>
+                </div>
+
+                <div class="item__description">
+                  <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in qua</p>
+                </div>              
+              </div>
+
+            </div>
+            <div class="services__item"></div>        
+          </div>
+
+          
+        
+        </div>
+      </div>   
+    </main>
+  </div>
 </body>
 </html>

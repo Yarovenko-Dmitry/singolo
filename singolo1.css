@@ -1,0 +1,118 @@
+@import "./fonts.css";
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.wrapper {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+/***  header  ***/
+.header {
+  width: 1020px;
+}
+
+.header__head {
+  
+  height: 89px;
+  background-color: #2d303a;
+  display: flex;
+}
+
+.h1 {
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  color: #2d303a;
+}
+  
+.logo {
+  font-size: 25px;
+  line-height: 6px;  
+  font-family: "Lato-Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-text {
+  position: relative;
+  margin-left: 37px;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+.asterisk {
+  color: #f06c64;
+}
+
+.navigation {
+  padding-left: 436px;
+  padding-top: 32px;
+}
+
+.main-menu {
+  display: flex;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 6px;
+  color: #f06c64;
+  font-family: "Lato-Bold";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+li {  
+  list-style-type: none;
+  display: flex;
+}
+
+.point {
+  width: 3px;
+  height: 3px;
+  margin: 3px 13px ;
+  border-radius: 50%;
+  background-color: #494e62;
+}
+
+a { 
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link-home {
+  color: #f06c64;
+}
+
+a:active { 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; 
+  color: #f06c64;
+}
+
+.header__bottom {
+  /* width: 1020px; */
+  height: 6px;
+  background-color: #323746;
+}
+
+.slider {
+  width: 1020px;
+  height: 600px;
+  background-color: #f06c64;
+}
+
+.services {
+  width: 1020px;
+  height: 495px;
+  background-color: #f2f2f2;
+}
