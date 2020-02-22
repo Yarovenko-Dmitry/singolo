@@ -179,10 +179,13 @@ a:hover {
   width: 240px;
   height: 483px;
   z-index: 50;
-  position:relative;
+  position:relative;  
+  background-image: url("./assets/img/pictures/phone-shadow.png");
+}
+
+.phone-shadow_vertical {
   top: 53px;
   left: -216px;
-  background-image: url("./assets/img/pictures/phone-shadow.png");
 }
 
 .phone_horizontal {
@@ -203,6 +206,13 @@ a:hover {
   transform: rotate(-90deg);
 }
 
-.arrow_right { 
-  transform: rotate(180deg);  
+.phone-shadow_horizontal {
+  top: 53px;
+  left: -216px;
+  transform: scale(1, -1) rotate(90deg);
+}
+
+.arrow_right {
+  margin-left: -38px;
+  transform: rotate(180deg);
 }
