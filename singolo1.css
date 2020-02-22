@@ -9,6 +9,7 @@
 .wrapper {
   display: flex;
   width: 1200px;
+  margin: 0 auto;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -47,6 +48,11 @@
   margin-top: 40px;
   color: #ffffff;
 }
+
+.logo-text:hover {
+  cursor: pointer;
+}
+
 
 .asterisk {
   color: #f06c64;
@@ -115,4 +121,88 @@ a:hover {
   width: 1020px;
   height: 495px;
   background-color: #f2f2f2;
+}
+
+/***  slider  ***/
+
+.slider {
+  display: flex;
+}
+
+.arrow {
+  width: 16px;
+  height: 27px;
+  margin-top: 281px;  
+  background-image: url("./assets/img/pictures/chev.png");
+}
+
+.arrow:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.arrow_left {
+  margin-left: 42px;
+}
+
+.phone {
+  width: 218px;
+  height: 461px;
+  z-index: 100;
+  background-image: url("./assets/img/pictures/cam.png");
+}
+
+.phone_vertical {
+  margin-top: 52px;
+  margin-left: 52px;   
+}
+
+.slider__frame {
+  width: 188px;
+  height: 333px;
+  position:relative;
+  overflow:hidden;
+}
+
+.vertical-frame {  
+  top: 66px;
+  left: 16px; 
+}
+
+.img-vertical-screen {
+  position:relative;
+  top: -135px;
+  left: -14px;
+}
+
+.phone-shadow {
+  width: 240px;
+  height: 483px;
+  z-index: 50;
+  position:relative;
+  top: 53px;
+  left: -216px;
+  background-image: url("./assets/img/pictures/phone-shadow.png");
+}
+
+.phone_horizontal {
+  margin-top: 50px;
+  margin-left: -24px;  
+  transform: rotate(90deg);
+}
+
+.horizontal-frame {
+  top: 66px;
+  left: 16px;
+}
+
+.img-horizontal-screen {
+  position:relative;
+  top: -122px;
+  left: -118px;
+  transform: rotate(-90deg);
+}
+
+.arrow_right { 
+  transform: rotate(180deg);  
 }
