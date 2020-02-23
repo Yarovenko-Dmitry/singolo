@@ -8,7 +8,7 @@
 
 .wrapper {
   display: flex;
-  width: 1200px;
+  width: 1020px;
   margin: 0 auto;
   flex-direction: column;
   align-content: center;
@@ -104,28 +104,20 @@ a:hover {
   color: #f06c64;
 }
 
-.header__bottom {
-  /* width: 1020px; */
-  height: 6px;
+.header__bottom {  
   background-color: #323746;
 }
 
-.slider {
-  width: 1020px;
-  height: 600px;
-  background-color: #f06c64;
-}
-
-.services {
-  width: 1020px;
-  height: 495px;
-  background-color: #f2f2f2;
+.block-bottom {
+  height: 6px;
 }
 
 /***  slider  ***/
 
-.slider {
+.slider_head {
   display: flex;
+  height: 594px;
+  background-color: #f06c64;
 }
 
 .arrow {
@@ -216,10 +208,20 @@ a:hover {
   transform: rotate(180deg);
 }
 
+.slider__bottom {
+  background-color: #ea676b;
+}
+
 /***  services  ***/
 
 .services {
-  height: 500px;
+  width: 1020px;
+  height: 501px;
+  background-color: #f2f2f2;
+}
+
+.services__head {
+  height: 495px;
   display: flex;
   flex-direction: column;
   align-content:center;
@@ -231,7 +233,6 @@ a:hover {
   position:relative;
   top: 68px;
   left: 40px;
-
 }
 
 .h2 {
@@ -259,35 +260,43 @@ a:hover {
 }
 
 /***  sorry very hard code  ***/
+
+/*! the reason for the delay - the affairs of the heart. really
+but I promise to write code that won't cut your eyes  */
+
 .very-hard-code__icon {
   width: 59px;
   height: 59px;
-  
+  position:relative;  
 }
-.very-hard-code__icon_pen {
-  position:relative;
+
+.very-hard-code__icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.very-hard-code__icon_pen {  
   top: 145px;
   left: 40px;
-  background-image: url(./assets/img/icon/1-bg-pen.svg);
-
+  background-image: url("./assets/img/icon/1-bg-pen.svg");
 }
 
 .very-hard-code__title {
+  position:relative;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
   font-family: "Lato-Black";
   font-weight: 900;
-
 }
 
-.very-hard-code__title_pen {
-  position:relative;
+.very-hard-code__title_pen {  
   top: 84px;
   left: 119px;
 }
 
 .very-hard-code__description {
+  position:relative;
   width: 219px;
   height: 128px;
   font-size: 12px;
@@ -297,68 +306,91 @@ a:hover {
   font-weight: 400;
 }
 
-.very-hard-code__description_pen {
-  position:relative;
+.very-hard-code__description_pen {  
   top: 94px;
   left: 119px;
 }
 
 .very-hard-code__icon_phone {
-
+  top: 63px;
+  left: 41px;
+  background-image: url("./assets/img/icon/2-bg-phone.svg");
 }
 
 .very-hard-code__title_phone {
-
+  top: 2px;
+  left: 120px;
 }
 
 .very-hard-code__description_phone {
-
+  top: 12px;
+  left: 121px;
 }
 
 .very-hard-code__icon_bulb {
-
+  top: -265px;
+  left: 360px;
+  background-image: url("./assets/img/icon/3-bg-bulb.svg");
 }
 
 .very-hard-code__title_bulb {
-
+  top: -326px;
+  left: 438px;
 }
 
 .very-hard-code__description_bulb {
-
+  top: -316px;
+  left: 438px;
 }
 
 .very-hard-code__icon_bubble {
-
+  top: -347px;
+  left: 360px;
+  background-image: url("./assets/img/icon/4-bg-bubble.svg");
 }
 
 .very-hard-code__title_bubble {
-
+  top: -408px;
+  left: 438px;
 }
 
 .very-hard-code__description_bubble {
-
+  top: -398px;
+  left: 438px;
 }
 
 .very-hard-code__icon_heart {
-
+  top: -675px;
+  left: 680px;
+  background-image: url("./assets/img/icon/5-bg-heart.svg");
 }
 
 .very-hard-code__title_heart {
-
+  top: -736px;
+  left: 761px;
 }
 
 .very-hard-code__description_heart {
-
+  top: -726px;
+  left: 760px;
 }
 
 .very-hard-code__icon_star {
-
+  top: -757px;
+  left: 680px;
+  background-image: url("./assets/img/icon/6-bg-star.svg");
 }
 
 .very-hard-code__title_star {
-
+  top: -818px;
+  left: 760px;
 }
 
 .very-hard-code__description_star {
+  top: -808px;
+  left: 760px;
+}
 
+.services__bottom {
+  background-color: #ffffff;
 }
