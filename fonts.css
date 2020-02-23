@@ -2,3 +2,18 @@
   font-family: "Lato-Bold";
   src: url("./assets/fonts/1_Lato-Bold.ttf");
  }
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("./assets/fonts/2_Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("./assets/fonts/3_Lato-Light.ttf");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("./assets/fonts/4_Lato-Regular.ttf");
+}

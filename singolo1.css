@@ -53,7 +53,6 @@
   cursor: pointer;
 }
 
-
 .asterisk {
   color: #f06c64;
 }
@@ -215,4 +214,151 @@ a:hover {
 .arrow_right {
   margin-left: -38px;
   transform: rotate(180deg);
+}
+
+/***  services  ***/
+
+.services {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  align-items: flex-start;
+  background-color: #f2f2f2;
+}
+
+.services__title {
+  position:relative;
+  top: 68px;
+  left: 40px;
+
+}
+
+.h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato-Black";
+  font-weight: 900;
+}
+
+.services__description {
+  position:relative;
+  top: 95px;
+  left: 40px;
+}
+
+.services__description-text {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato-Light";
+  font-weight: 300;
+}
+
+/***  sorry very hard code  ***/
+.very-hard-code__icon {
+  width: 59px;
+  height: 59px;
+  
+}
+.very-hard-code__icon_pen {
+  position:relative;
+  top: 145px;
+  left: 40px;
+  background-image: url(./assets/img/icon/1-bg-pen.svg);
+
+}
+
+.very-hard-code__title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato-Black";
+  font-weight: 900;
+
+}
+
+.very-hard-code__title_pen {
+  position:relative;
+  top: 84px;
+  left: 119px;
+}
+
+.very-hard-code__description {
+  width: 219px;
+  height: 128px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+}
+
+.very-hard-code__description_pen {
+  position:relative;
+  top: 94px;
+  left: 119px;
+}
+
+.very-hard-code__icon_phone {
+
+}
+
+.very-hard-code__title_phone {
+
+}
+
+.very-hard-code__description_phone {
+
+}
+
+.very-hard-code__icon_bulb {
+
+}
+
+.very-hard-code__title_bulb {
+
+}
+
+.very-hard-code__description_bulb {
+
+}
+
+.very-hard-code__icon_bubble {
+
+}
+
+.very-hard-code__title_bubble {
+
+}
+
+.very-hard-code__description_bubble {
+
+}
+
+.very-hard-code__icon_heart {
+
+}
+
+.very-hard-code__title_heart {
+
+}
+
+.very-hard-code__description_heart {
+
+}
+
+.very-hard-code__icon_star {
+
+}
+
+.very-hard-code__title_star {
+
+}
+
+.very-hard-code__description_star {
+
 }
