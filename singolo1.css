@@ -257,138 +257,92 @@ a:hover {
   color: #767e9e;
   font-family: "Lato-Light";
   font-weight: 300;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
-/***  sorry very hard code  ***/
+.advantages-section {
+  position:relative;
+  top: 143px;
+  left: 41px;
+}
 
-/*! the reason for the delay - the affairs of the heart. really
-but I promise to write code that won't cut your eyes  */
+.three-columns {
+  display: flex;
+}
 
-.very-hard-code__icon {
+.advantage-box {
+  display: flex;
+ }
+
+.advantage-box__icon {
   width: 59px;
   height: 59px;
-  position:relative;  
+  margin-top: 2px; 
 }
 
-.very-hard-code__icon:hover {
+.advantage-box__icon:hover {
   cursor: pointer;
   opacity: 0.5;
 }
 
-.very-hard-code__icon_pen {  
-  top: 145px;
-  left: 40px;
-  background-image: url("./assets/img/icon/1-bg-pen.svg");
-}
-
-.very-hard-code__title {
-  position:relative;
+.advantage-box__title { 
+  margin-left: 20px;  
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
   font-family: "Lato-Black";
-  font-weight: 900;
+  font-weight: 900; 
 }
 
-.very-hard-code__title_pen {  
-  top: 84px;
-  left: 119px;
-}
-
-.very-hard-code__description {
-  position:relative;
+.advantage-box__text {
   width: 219px;
-  height: 128px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 20px; 
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
   font-family: "Lato-Regular";
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
-.very-hard-code__description_pen {  
-  top: 94px;
-  left: 119px;
+.icon_pen {  
+  background-image: url("./assets/img/icon/1-bg-pen.svg");
 }
 
-.very-hard-code__icon_phone {
-  top: 63px;
-  left: 41px;
+.icon_phone {  
   background-image: url("./assets/img/icon/2-bg-phone.svg");
 }
 
-.very-hard-code__title_phone {
-  top: 2px;
-  left: 120px;
-}
-
-.very-hard-code__description_phone {
-  top: 12px;
-  left: 121px;
-}
-
-.very-hard-code__icon_bulb {
-  top: -265px;
-  left: 360px;
+.icon_bulb {  
   background-image: url("./assets/img/icon/3-bg-bulb.svg");
 }
 
-.very-hard-code__title_bulb {
-  top: -326px;
-  left: 438px;
-}
-
-.very-hard-code__description_bulb {
-  top: -316px;
-  left: 438px;
-}
-
-.very-hard-code__icon_bubble {
-  top: -347px;
-  left: 360px;
+.icon_bubble { 
   background-image: url("./assets/img/icon/4-bg-bubble.svg");
 }
 
-.very-hard-code__title_bubble {
-  top: -408px;
-  left: 438px;
-}
-
-.very-hard-code__description_bubble {
-  top: -398px;
-  left: 438px;
-}
-
-.very-hard-code__icon_heart {
-  top: -675px;
-  left: 680px;
+.icon_heart { 
   background-image: url("./assets/img/icon/5-bg-heart.svg");
 }
 
-.very-hard-code__title_heart {
-  top: -736px;
-  left: 761px;
-}
-
-.very-hard-code__description_heart {
-  top: -726px;
-  left: 760px;
-}
-
-.very-hard-code__icon_star {
-  top: -757px;
-  left: 680px;
+.icon_star {  
   background-image: url("./assets/img/icon/6-bg-star.svg");
 }
 
-.very-hard-code__title_star {
-  top: -818px;
-  left: 760px;
+.advantage-box_bottom {
+  margin-top: 35px; 
 }
 
-.very-hard-code__description_star {
-  top: -808px;
-  left: 760px;
+.advantages-column_center {
+  margin-left: 21px;
+}
+
+.advantages-column_right {
+  margin-left: 22px;
 }
 
 .services__bottom {
