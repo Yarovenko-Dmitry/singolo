@@ -28,7 +28,7 @@
 }
 
 .portfolio__title {
-  position:relative;
+  position: relative;
   top: 69px;
   left: 40px;
 }
@@ -42,7 +42,7 @@
 }
 
 .portfolio__description {
-  position:relative;
+  position: relative;
   top: 96px;
   left: 40px;
 }
@@ -63,7 +63,7 @@
   display: flex;
   width: 287px;
   height: 22px;
-  position:relative;
+  position: relative;
   top: 80px;
   left: 41px;
   justify-content: space-between; 
@@ -92,40 +92,28 @@
   outline: 0;
 }
 
-.portfolio__work-examples {
-  
-}
-
 .portfolio__section {
   width: 940px;
   height: 601px;
   display: flex;
-  position:relative;
+  position: relative;
   top: 99px;
   left: 40px;
   justify-content: space-between;
-  overflow:hidden;
-}
-
-.four-columns {
-
-}
-
-.portfolio__first-column {
-
+  overflow: hidden;
 }
 
 .portfolio__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .portfolio__column-item {  
   width: 220px;
   height: 187px; 
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .first-column-first-item {
@@ -146,10 +134,6 @@
   background-image: url("./assets/img/pictures/3-first-column-third-item.png");
 }
 
-.portfolio__second-column {
- 
-}
-
 .second-column-first-item {
   background-position-x: -82px;
   background-position-y: -43px;
@@ -168,10 +152,6 @@
   background-image: url("./assets/img/pictures/6-second-column-third-item.png");
 }
 
-.portfolio__third-column {  
-
-}
-
 .third-column-first-item {
   background-position-x: -11px;
   background-position-y: -1px;
@@ -188,10 +168,6 @@
   background-position-x: -144px;
   background-position-y: 237px;
   background-image: url("./assets/img/pictures/9-third-column-third-item.png");
-}
-
-.portfolio__fours-column { 
-
 }
 
 .fours-column-first-item {
@@ -213,11 +189,11 @@
 }
 
 .portfolio__column:nth-child(n+5){
-  display:none;
+  display: none;
 }
 
 .portfolio__column-item:nth-child(n+4){
-  display:none;
+  display: none;
 }
 
 .portfolio__bottom {  
@@ -242,13 +218,13 @@
 }
 
 .about-us__title {
-  position:relative;
+  position: relative;
   top: 68px;
   left: 40px;
 }
 
 .about-us__description {
-  position:relative;
+  position: relative;
   top: 95px;
   left: 40px;
 }
@@ -268,71 +244,115 @@
 .about-us__employees-box {
   width: 940px;
   height: 442px;
-  position:relative;
+  position: relative;
   top: 143px;
   left: 40px;  
 }
 
-.employees-columns {
-
-}
-
 .three-columns {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .employee-column {
-
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
 }
 
 .employee-column__photo {
+  width: 300px;
+  height: 300px;
+}
 
+.first-photo {
+  background-image: url("./assets/img/pictures/employee-1-аdam-jensen.png");
+}
+
+.second-photo {
+  background-image: url("./assets/img/pictures/employee-2-desmond-miles.png");
+}
+
+.third-photo {
+  background-image: url("./assets/img/pictures/employee-3-scolara-visari.png");
 }
 
 .employee-column__name {
+  width: 300px;
+  position: relative;
+  top: 17px;
+  left: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
 
+.employee-column__name-text {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato-Black";
+  font-weight: 900;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 
 .employee-column__about {
+  position: relative;
+  top: 27px;
+  left: -1px;
+}
 
+.employee-column__about-text {
+  width: 300px;
+  height: 91px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  text-align: left;
 }
 
 .employee-column__social-contacts {
-
-}
-
-.employee-column__facebook {
-
+  display: flex;
+  width: 152px;
+  justify-content: space-between;
+  position: relative;
+  top: 1px;
+  left: 1px;
 }
 
 .social-contact-item {
+  width: 34px;
+  height: 34px;  
+}
 
+.social-contact-item:hover {
+  cursor: pointer;  
+  opacity: 0.5;
+}
+
+.employee-column__facebook {
+  background-image: url("./assets/img/icon/facebook.svg");
 }
 
 .employee-column__google {
-
+  background-image: url("./assets/img/icon/Google.svg");
 }
 
 .employee-column__twitter {
-
+  background-image: url("./assets/img/icon/Twitter.svg");
 }
 
 .employee-column__linkedin {
-
+  background-image: url("./assets/img/icon/LinkedIn.svg");
 }
-
-
-
 
 .about-us__bottom {
   background-color: #ffffff;
 }
-
-
-/* 
-
-white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 300px;
-*/
