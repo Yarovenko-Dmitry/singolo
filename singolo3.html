@@ -18,17 +18,13 @@
         </div>
         <div class="get-a-quote__feedback">
           <div class="form-box">
-
             <form class="feedback-form" action="URL" method="POST" target="URL">
               <input class="feedback-form__name form-input" type="text" placeholder="Name (Required)" maxlength="30" required>
               <input class="feedback-form__email form-input" type="email" placeholder="Email (Required)" maxlength="30" required>
               <input class="feedback-form__subject form-input" type="text" placeholder="Subject" maxlength="30" required>
               <textarea class="feedback-form__textarea" rows="5" cols="30" placeholder="Describe your project in detail..." maxlength="500"></textarea> 
-              <input class="feedback-form__submit form-input" type="submit" value="Submit">
-
+              <input class="feedback-form__submit form-input" type="submit" value="Submit" placeholder="task">
             </form>
-
-
           </div>
           <div class="contact-information">
             <div class="contact-information__title">
@@ -38,9 +34,26 @@
               <p class="contact-information__description-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib. Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib. Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nib.</p>
             </div>
             <div class="contact-data">
-              <div class="contact-data__address"></div>
-              <div class="contact-data__phone"></div>
-              <div class="contact-data__email"></div>
+              <div class="contact-data__item">
+                <div class="contact-data__icon contact-data-address"></div>
+                <div class="contact-data__info contact-data__info-address">
+                  <p class="contact-data__info-text">Elm St. 14/05 Lost City</p>
+                </div>
+              </div>
+              <div class="contact-data__item">
+                <div class="contact-data__icon contact-data-phone"></div>
+                <div class="contact-data__info contact-data__info-phone">
+                  <p class="contact-data__info-text"><a href="tel:+03528 331 86 35" 
+                    title="to call 03528 331 86 35">03528 331 86 35</a></p>
+                </div>
+              </div>             
+              <div class="contact-data__item">
+                <div class="contact-data__icon contact-data-email"></div>
+                <div class="contact-data__info contact-data__info-email">
+                  <p class="contact-data__info-text"> <a href="mailto:info@singolo.com" 
+                    title="to write info@singolo.com">info@singolo.com</a></p>
+                </div>
+              </div>              
             </div>
           </div>
         </div>
@@ -49,12 +62,16 @@
     </div>
   </div>
   <footer class="footer">
-    <div class="footer__copyright"></div>
-    <div class="footer__social-contacts">
-      <div class="footer__facebook social-contact-item"></div>
-      <div class="footer__google social-contact-item"></div>
-      <div class="footer__twitter social-contact-item"></div>
-      <div class="footer__linkedin social-contact-item"></div>
+    <div class="wrapper-additional footer-wrapper">
+      <div class="footer__copyright">
+        <p class="footer__copyright-text"> &copy; Copyright 2013</p>
+      </div>     
+      <div class="footer__social-contacts">
+        <div class="footer__facebook social-contact-item"></div>
+        <div class="footer__google social-contact-item"></div>
+        <div class="footer__twitter social-contact-item"></div>
+        <div class="footer__linkedin social-contact-item"></div>
+      </div>
     </div>
   </footer>  
 </body>

@@ -63,193 +63,233 @@
 
 .get-a-quote__feedback {
   display: flex;
+  width: 940px;
   position: relative;
-  top: 80px;
-  left: 41px;
+  top: 142px;
+  left: 40px;
   justify-content: space-between; 
 }
 
 .feedback-form {
-
-}
-
-.feedback-form__name {
-
-}
-
-.form-input {
-
-}
-
-.feedback-form__email {
-
-}
-
-.feedback-form__subject {
-
-}
-
-.feedback-form__textarea {
-
-}
-
-.feedback-form__submit {
-
-}
-
-
-
-
-
-
-/***  footer  ***/
-
-.about-us__head {
   display: flex;
-  width: 1020px;
-  height: 728px;  
+  width: 619px;
+  height: 418px;
   flex-direction: column;
   align-content: center;
-  align-items: flex-start;
-  background-color: #f2f2f2;
-}
-
-.about-us__title {
-  position: relative;
-  top: 68px;
-  left: 40px;
-}
-
-.about-us__description {
-  position: relative;
-  top: 95px;
-  left: 40px;
-}
-
-.about-us__description-text {
-  width: 940px;
-  height: 57px;
-  font-size: 18px;
-  line-height: 30px;
-  color: #767e9e;
-  font-family: "Lato-Light";
-  font-weight: 300;
-  overflow: hidden;
-  text-overflow: clip;  
-}
-
-.about-us__employees-box {
-  width: 940px;
-  height: 442px;
-  position: relative;
-  top: 143px;
-  left: 40px;  
-}
-
-.three-columns {
-  display: flex;
+  align-items: left;
   justify-content: space-between;
 }
 
-.employee-column {
-  display: flex;
-  width: 300px;
-  flex-direction: column;
-  align-content: center;
-  align-items: flex-start;
-}
-
-.employee-column__photo {
-  width: 300px;
-  height: 300px;
-}
-
-.first-photo {
-  background-image: url("./assets/img/pictures/employee-1-аdam-jensen.png");
-}
-
-.second-photo {
-  background-image: url("./assets/img/pictures/employee-2-desmond-miles.png");
-}
-
-.third-photo {
-  background-image: url("./assets/img/pictures/employee-3-scolara-visari.png");
-}
-
-.employee-column__name {
-  width: 300px;
-  position: relative;
-  top: 17px;
-  left: -1px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;  
-}
-
-.employee-column__name-text {
-  font-size: 18px;
-  line-height: 18px;
-  color: #666d89;
-  font-family: "Lato-Black";
-  font-weight: 900;
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;  
-}
-
-.employee-column__about {
-  position: relative;
-  top: 27px;
-  left: -1px;
-}
-
-.employee-column__about-text {
-  width: 300px;
-  height: 91px;
+.form-input {
+  width: 604px;
+  height: 38px;
+  padding-left: 15px;  
+  border-radius: 5px;
+  background-color: #d6564f;
   font-size: 12px;
   line-height: 22px;
-  color: #767e9e;
+  color: #f48c8f;
   font-family: "Lato-Regular";
   font-weight: 400;
   text-align: left;
 }
 
-.employee-column__social-contacts {
+.form-input::placeholder {
+  color: #f48c8f;
+}
+
+.feedback-form__textarea {  
+  width: 604px;
+  height: 195px;
+  padding-top: 7px;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #d6564f;
+  resize: none;
+}
+
+.feedback-form__textarea::placeholder {
+  color: #f48c8f;
+}
+
+.feedback-form__submit {
+  width: 65px;
+}
+
+
+.contact-information {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-content: center;
+  align-items: left;
+}
+
+.contact-information__title-text {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato-Black";
+  font-weight: 900;
+  text-align: left;
+}
+
+.contact-information__description {
+  position: relative;
+  top: 10px;  
+  width: 300px;
+  height: 110px;
+}
+
+.contact-information__description-text {  
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact-data {
+  display: flex;
+  height: 55px; 
+  flex-direction: column;
+  align-content: center;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.contact-data__item {
+  display: flex;
+}
+
+.contact-data__icon {
+  width: 13px;
+  height: 11px;
+  position: relative;
+  top: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-data-address {
+  background-image: url("./assets/img/icon/location_icon.svg");
+}
+
+.contact-data__info {
+  position: relative;
+  left: 11px 
+}
+
+.contact-data__info-address { 
+  top: 8px;  
+}
+
+.contact-data__info-phone { 
+  top: 7px;  
+}
+
+.contact-data__info-email {
+  top: 7px; 
+}
+
+a {
+  text-decoration: none;
+  color: #f0d8d9;
+}
+
+.contact-data__info-text {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  text-align: left;
+}
+
+.contact-data-phone {
+  background-image: url("./assets/img/icon/phone_icon.svg");
+}
+
+.contact-data-email {
+  background-image: url("./assets/img/icon/email_icon.svg");
+}
+
+.get-a-quote__bottom {
+  background-color: #ea676b;
+}
+
+.block-bottom {
+  width: 1020px;
+  height: 6px;
+}
+
+/***  footer  ***/
+
+.footer-wrapper{
+  display: flex;
+  flex-direction: row;
+  height: 76px;
+  justify-content: space-between;
+  background-color: #2d303a;
+}
+
+.footer__copyright {
+  margin-left: 42px; 
+}
+
+.footer__copyright-text {
+  font-size: 12px;
+  line-height: 22px;
+  color: #666d89;
+  font-family: "Lato-Regular";
+  font-weight: 400;
+  text-align: left;
+}
+
+.footer__social-contacts {
   display: flex;
   width: 152px;
+  height: 32px;
+  margin-right: 41px;
+  align-content: center;
+  align-items: left;
   justify-content: space-between;
-  position: relative;
-  top: 1px;
-  left: 1px;
 }
 
 .social-contact-item {
   width: 34px;
-  height: 34px;  
+  height: 34px;
+  position: relative;
+  top: -1px;
+}
+
+.footer__facebook {   
+  background-image: url("./assets/img/icon/facebook.svg");
+}
+
+.footer__google { 
+  left: 1px;
+  background-image: url("./assets/img/icon/Google.svg");
+}
+
+.footer__twitter {  
+  left: 2px;
+  background-image: url("./assets/img/icon/Twitter.svg");
+}
+
+.footer__linkedin { 
+  left: 3px;
+  background-image: url("./assets/img/icon/LinkedIn.svg");
 }
 
 .social-contact-item:hover {
   cursor: pointer;  
   opacity: 0.5;
-}
-
-.employee-column__facebook {
-  background-image: url("./assets/img/icon/facebook.svg");
-}
-
-.employee-column__google {
-  background-image: url("./assets/img/icon/Google.svg");
-}
-
-.employee-column__twitter {
-  background-image: url("./assets/img/icon/Twitter.svg");
-}
-
-.employee-column__linkedin {
-  background-image: url("./assets/img/icon/LinkedIn.svg");
-}
-
-.about-us__bottom {
-  background-color: #ffffff;
 }
