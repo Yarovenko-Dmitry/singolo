@@ -258,6 +258,7 @@ a:hover {
   font-weight: 300;
   overflow: hidden;
   text-overflow: clip;
+  text-align: justify;
 }
 
 .advantages-section {
@@ -306,6 +307,7 @@ a:hover {
   font-weight: 400;
   overflow: hidden;
   text-overflow: clip;
+  text-align: justify;
 }
 
 .icon_pen {  
@@ -386,6 +388,7 @@ a:hover {
   font-weight: 300;
   overflow: hidden;
   text-overflow: clip;
+  text-align: justify;
 }
 
 .portfolio__buttons {
@@ -572,7 +575,8 @@ a:hover {
   font-family: "Lato-Light";
   font-weight: 300;
   overflow: hidden;
-  text-overflow: clip;  
+  text-overflow: clip;
+  text-align: justify;
 }
 
 .about-us__employees-box {
@@ -649,7 +653,7 @@ a:hover {
   color: #767e9e;
   font-family: "Lato-Regular";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .employee-column__social-contacts {
@@ -725,10 +729,10 @@ a:hover {
   line-height: 30px;
   color: #f0d8d9;
   font-family: "Lato-Light";
-  font-weight: 300;
-  text-align: left;
+  font-weight: 300;  
   overflow: hidden;
   text-overflow: clip;
+  text-align: justify;
 }
 
 .get-a-quote__feedback {
@@ -761,7 +765,7 @@ a:hover {
   color: #f48c8f;
   font-family: "Lato-Regular";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .form-input::placeholder {
@@ -782,6 +786,7 @@ a:hover {
   border-radius: 5px;
   background-color: #d6564f;
   resize: none;
+  text-align: justify;
 }
 
 .feedback-form__textarea::placeholder {
@@ -803,10 +808,10 @@ a:hover {
 .contact-information__title-text {
   font-size: 18px;
   line-height: 18px;
-  color: #f0d8d9;
+  color: #f0d8d9;  
   font-family: "Lato-Black";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
 }
 
 .contact-information__description {
@@ -822,7 +827,7 @@ a:hover {
   color: #f0d8d9;
   font-family: "Lato-Regular";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .contact-data {
@@ -883,7 +888,7 @@ a:hover {
   color: #f0d8d9;
   font-family: "Lato-Regular";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .get-a-quote__bottom {
@@ -915,7 +920,7 @@ a:hover {
   color: #666d89;
   font-family: "Lato-Regular";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .footer__social-contacts {
