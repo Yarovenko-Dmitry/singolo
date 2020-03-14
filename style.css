@@ -18,10 +18,12 @@
 /***  header  ***/
 
 .header__head {
+  display: flex;
   width: 1020px;  
   height: 89px;
+  position: fixed;
   background-color: #2d303a;
-  display: flex;
+  z-index: 1000 ;  
 }
 
 .h1 {
@@ -75,7 +77,8 @@ li {
 }
 
 a { 
-  text-decoration: none;  
+  text-decoration: none;
+  animation: 1s;
 }
 
 .point {
@@ -86,20 +89,22 @@ a {
   background-color: #494e62;  
 }
 
-.link-home {
+.main-menu__link_selected {
   color: #f06c64;
 }
 
-.link-services,
-.link-portfolio,
-.link-about,
-.link-contact {
+.main-menu__link_unselected {
   color: #ffffff;
 }
 
 a:hover {
   text-decoration: underline; 
   color: #f06c64;
+}
+
+.header__head-fake { 
+  width: 1020px;  
+  height: 89px;   
 }
 
 .header__bottom {  
@@ -971,4 +976,11 @@ a:hover {
 .social-contact-item:hover {
   cursor: pointer;  
   opacity: 0.5;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -89px;
+  visibility: hidden;
 }
