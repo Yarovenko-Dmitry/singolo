@@ -156,8 +156,8 @@ a:hover {
 .slider__frame {
   width: 188px;
   height: 333px;
-  position:relative;
-  overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .vertical-frame {  
@@ -166,7 +166,7 @@ a:hover {
 }
 
 .img-vertical-screen {
-  position:relative;
+  position: relative;
   top: -135px;
   left: -14px;
 }
@@ -175,7 +175,7 @@ a:hover {
   width: 240px;
   height: 483px;
   z-index: 50;
-  position:relative;  
+  position: relative;  
   background-image: url("./assets/img/pictures/phone-shadow.png");
 }
 
@@ -196,7 +196,7 @@ a:hover {
 }
 
 .img-horizontal-screen {
-  position:relative;
+  position: relative;
   top: -122px;
   left: -119px;
   transform: rotate(-90deg);
@@ -212,6 +212,78 @@ a:hover {
   margin-left: -38px;
   transform: rotate(180deg);
 }
+
+/*! del animation */
+
+.slider__item-first {  
+  background-image: url(./assets/img/pictures/bg-slider-1.png);
+}
+
+.slider__item-second {  
+  background-image: url(./assets/img/pictures/bg-slider-2.png);
+}
+
+
+.slider__item {
+  width: 1020px;
+  height: 594px;
+  animation: 2.5s ease-in-out;
+}
+
+.display-none {
+  display: none;
+}
+
+.slider__head_selected,
+.slider__head_unselected {
+  display: block;
+}
+
+.slider__head_unselected {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slider__head_to-left {
+  animation-name: left;
+}
+
+.slider__head_from-right {
+  animation-name: right;
+}
+
+.slider__head_to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.slider__head_from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+
+
 
 .slider__bottom {
   background-color: #ea676b;
