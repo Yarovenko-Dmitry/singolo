@@ -311,9 +311,6 @@ a:hover {
   background-color: #648BF0;
 }
 
-
-
-
 .display-none {
   display: none;
 };
@@ -322,7 +319,6 @@ a:hover {
 
 .wrapper_services {
   height: 500px;
-
 }
 
 .services__head {
@@ -512,7 +508,7 @@ a:hover {
   justify-content: space-between; 
 }
 
-.input {  
+.button {  
   padding-left: 7px;
   padding-right: 6px; 
   font-size: 12px;
@@ -525,18 +521,18 @@ a:hover {
   border-radius: 5px;
 }
 
-.input-all {    
+.button-selected {    
   color: #c5c5c5;
   border: 1px solid #c5c5c5;
 }
 
-.input:hover {
+.button:hover {
   cursor: pointer;  
   color: #c5c5c5;
   border: 1px solid #c5c5c5;
 }
 
-.input:focus {
+.button:focus {
   outline: 0;
 }
 
@@ -562,6 +558,12 @@ a:hover {
   width: 220px;
   height: 187px; 
   overflow: hidden;
+}
+
+.portfolio__column-item_selected {  
+  border: 5px solid#F06C64;
+  width: 210px;
+  height: 177px;
 }
 
 .first-column-first-item {

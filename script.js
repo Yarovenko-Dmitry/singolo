@@ -4,17 +4,23 @@ window.onload = function() {
 
   // NavLinks
 
-  addLinksClickHandler();
+  selectNavLink();
 
   // Slider
 
   switchPhoneScreens();
   switchSlider();
+
+  //  Portfolio
+
+  switchPortfolioTag();
+  selectPortfolioItem();
+
 }
 
 // NavLinks
 
-const addLinksClickHandler = () => {
+const selectNavLink = () => {
   document.querySelector('.main-menu').addEventListener('click', (e) => {
     if (e.target.classList.contains('main-menu__link')) {
       let clickedNavLink = e.target;
@@ -66,7 +72,6 @@ const switchScreen = (position) => {
     }
   }
 }
-
 
 // Slider
 
@@ -134,3 +139,54 @@ const switchSlider = () => {
     }
   });  
 }
+
+//  Portfolio
+
+const switchPortfolioTag = () => {
+  document.querySelector('.portfolio__buttons').addEventListener('click', (e) => {
+    if (e.target.classList.contains('button')) {     
+      let clickedTag = e.target;
+      removeSelectedTag();
+      selectClickedTag(clickedTag);
+    }
+  })
+}
+
+const removeSelectedTag = () => {
+  let tags = document.querySelectorAll('.portfolio__buttons .button');  
+  tags.forEach( link => {    
+    link.classList.remove('button-selected');
+  });
+}
+
+const selectClickedTag = (clickedTag) => { 
+  clickedTag.classList.add('button-selected');
+}
+
+//  Portfolio
+
+const selectPortfolioItem = () => {
+  document.querySelector('.four-columns').addEventListener('click', (e) => {
+    if (e.target.classList.contains('portfolio__column-item')) {     
+      let clickedPortfolioItem = e.target;
+      removeSelectedPortfolioItem();
+      selectClickedPortfolioItem(clickedPortfolioItem);
+    }
+  })
+}
+
+const removeSelectedPortfolioItem = () => {
+  let PortfolioItems = document.querySelectorAll('.four-columns .portfolio__column-item');  
+  PortfolioItems.forEach( link => {    
+    link.classList.remove('portfolio__column-item_selected');
+  });
+}
+
+const selectClickedPortfolioItem = (clickedPortfolioItem) => { 
+  clickedPortfolioItem.classList.add('portfolio__column-item_selected');
+}
+
+
+// console.log('All right 1 !!!');
+// console.log('All right 2 !!!');
+// console.log('All right 3 !!!');
