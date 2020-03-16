@@ -118,11 +118,100 @@ a:hover {
 
 /***  slider  ***/
 
+.slider .wrapper{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapperSlider {
+  overflow: hidden;
+}
+
 .slider__head {
-  display: flex;
+  display: none;
   width: 1020px;
-  height: 594px;
-  background-color: #f06c64;
+  height: 594px;  
+  position: relative;
+  animation: 10.2s ease-in-out;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider__slide-first {
+  background-color: #ea676b;
+}
+
+.slider__slide-second {
+  background-image: url("./assets/img/pictures/bg-slider-2.png");
+}
+
+.active,
+.next {
+  display: flex;
+  overflow: hidden;
+}
+
+.next {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.arrow_left {
+  left: 0;
+  right: auto;
+  margin-left: 484px;
+}
+
+.arrow_right {
+  right: 0;
+  left: auto;
+  margin-right: 481px;
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
 }
 
 .arrow {
@@ -137,10 +226,6 @@ a:hover {
   opacity: 0.5;
 }
 
-.arrow_left {
-  margin-left: 42px;
-}
-
 .phone {
   width: 218px;
   height: 461px;
@@ -149,6 +234,8 @@ a:hover {
 }
 
 .phone_vertical {
+  position: relative;
+  left: 57px;
   margin-top: 52px;
   margin-left: 52px;   
 }
@@ -181,10 +268,12 @@ a:hover {
 
 .phone-shadow_vertical {
   top: 53px;
-  left: -216px;
+  left: -159px;
 }
 
 .phone_horizontal {
+  position: relative;
+  left: 59px;
   margin-top: 50px;
   margin-left: -24px;  
   transform: rotate(90deg);
@@ -204,7 +293,7 @@ a:hover {
 
 .phone-shadow_horizontal {
   top: 53px;
-  left: -216px;
+  left: -157px;
   transform: scale(1, -1) rotate(90deg);
 }
 
@@ -213,83 +302,28 @@ a:hover {
   transform: rotate(180deg);
 }
 
-/*! del animation */
 
-.slider__item-first {  
-  background-image: url(./assets/img/pictures/bg-slider-1.png);
-}
-
-.slider__item-second {  
-  background-image: url(./assets/img/pictures/bg-slider-2.png);
-}
-
-
-.slider__item {
-  width: 1020px;
-  height: 594px;
-  animation: 2.5s ease-in-out;
-}
-
-.display-none {
-  display: none;
-}
-
-.slider__head_selected,
-.slider__head_unselected {
-  display: block;
-}
-
-.slider__head_unselected {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.slider__head_to-left {
-  animation-name: left;
-}
-
-.slider__head_from-right {
-  animation-name: right;
-}
-
-.slider__head_to-right {
-  animation-name: right;
-  animation-direction: reverse;
-}
-
-.slider__head_from-left {
-  animation-name: left;
-  animation-direction: reverse;
-}
-
-@keyframes left {
-  from {
-    left: 0;
-  }
-  to {
-    left: -100%;
-  }
-}
-
-@keyframes right {
-  from {
-    left: 100%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-
-
-
-
-.slider__bottom {
+.slider__bottom_first {
   background-color: #ea676b;
 }
 
+.slider__bottom_second {
+  background-color: #648BF0;
+}
+
+
+
+
+.display-none {
+  display: none;
+};
+
 /***  services  ***/
+
+.wrapper_services {
+  height: 500px;
+
+}
 
 .services__head {
   width: 1020px;

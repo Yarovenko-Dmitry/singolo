@@ -9,7 +9,7 @@ window.onload = function() {
   // Slider
 
   switchPhoneScreens();
-  // switchSlider();
+  switchSlider();
 }
 
 // NavLinks
@@ -70,57 +70,67 @@ const switchScreen = (position) => {
 
 // Slider
 
-// const switchSlider = () => {
-//   const sliderItems = document.querySelectorAll('.slider__item');
-//   let currentSliderItem = 0;
-//   let isSelected = true;
-//   const sliderHeadItem = document.querySelector('.slider__head');
+const switchSlider = () => {
 
-//   function changeCurrentSliderItem(counter) {
-//     currentSliderItem = (counter + sliderItems.length) % sliderItems.length;
-//   }
+  let items = document.querySelectorAll('.slider__head');
+  let stripColor = document.querySelector('.slider__bottom');
+  let currentItem = 0;
+  let isEnabled = true;
 
-//   function hideSliderItem(direction) {
-//     isSelected = false;
-//     sliderItems[currentSliderItem].classList.add(direction);
-//     console.log(sliderHeadItem);    
-//     sliderItems[currentSliderItem].addEventListener('animationend', function() {
-//       this.classList.remove('slider__head_selected', direction);
-//     });
-//   }
+  function changeCurrentItem(n) {
+    currentItem = (n + items.length) % items.length;
+  }
 
-//   function showSliderItem(direction) {
-//     sliderItems[currentSliderItem].classList.add('slider__head_unselected', direction);
-//     sliderItems[currentSliderItem].addEventListener('animationend', function() {
-//       this.classList.remove('slider__head_unselected', direction);
-//       this.classList.add('slider__head_selected');
-//       isSelected = true;
-      
-//     });
-//   }
- 
-//   function previousSliderItem(n) {
-//     hideSliderItem('slider__head_to-right');
-//     changeCurrentSliderItem(n - 1);
-//     showSliderItem('slider__head_from-left');
-//   }
+  function hideItem(direction) {
+    isEnabled = false;
+    items[currentItem].classList.add(direction);
+    items[currentItem].addEventListener('animationend', function() {
+      this.classList.remove('active', direction);
+    });
+  }
 
-//   function nextSliderItem(n) {
-//     hideSliderItem('slider__head_to-left');
-//     changeCurrentSliderItem(n + 1);
-//     showSliderItem('slider__head_from-right');
-//   }
+  function showItem(direction) {
+    items[currentItem].classList.add('next', direction);
+    items[currentItem].addEventListener('animationend', function() {
+      this.classList.remove('next', direction);
+      this.classList.add('active');
+      isEnabled = true;
+    });
+  }
 
-//   document.querySelector('.arrow_left').addEventListener('click', function() {
-//     if (isSelected) {
-//       previousSliderItem(currentSliderItem);
-//     }
-//   });
+  function nextItem(n) {
+    hideItem('to-left');
+    changeCurrentItem(n + 1);
+    showItem('from-right');
+  }
 
-//   document.querySelector('.arrow_right').addEventListener('click', function() {
-//     if (isSelected) {
-//       nextSliderItem(currentSliderItem);
-//     }
-//   }); 
-// }
+  function previousItem(n) {
+    hideItem('to-right');
+    changeCurrentItem(n - 1);
+    showItem('from-left');
+  }
 
+  function changeStripColor (currentItem) {
+    if (!(currentItem)) {
+      stripColor.classList.remove('slider__bottom_second');
+      stripColor.classList.add('slider__bottom_first');
+    } else {
+      stripColor.classList.remove('slider__bottom_first');
+      stripColor.classList.add('slider__bottom_second');
+    }
+  }
+
+  document.querySelector('.arrow_left').addEventListener('click', function() {
+    if (isEnabled) {
+      previousItem(currentItem);
+      changeStripColor (currentItem)
+    }
+  });
+
+  document.querySelector('.arrow_right').addEventListener('click', function() {
+    if (isEnabled) {
+      nextItem(currentItem);
+      changeStripColor (currentItem)
+    }
+  });  
+}
