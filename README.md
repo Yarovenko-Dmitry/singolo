@@ -8,6 +8,7 @@ Task DOM [link to singolo-DOM-ru.md](https://github.com/rolling-scopes-school/ta
 
 Task Responsive [link to singolo-responsive-ru.md](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/singolo-responsive-ru.md)
 
+
 I would like to note that I have submits to deadlines.
 I also have changes after the deadline. It was allowed by Sergey Shalyapin [link](https://www.youtube.com/watch?v=0M9Rz-wXYas&feature=youtu.be&t=5640)
 I hope for your goodwill and objectivity.
