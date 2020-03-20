@@ -133,7 +133,7 @@ a:hover {
   width: 1020px;
   height: 594px;  
   position: relative;
-  animation: 10.2s ease-in-out;
+  animation: 0.2s ease-in-out;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -564,6 +564,25 @@ a:hover {
   border: 5px solid#F06C64;
   width: 210px;
   height: 177px;
+}
+
+.img-1 {
+  background-image: url("./assets/img/pictures/1-first-column-first-item.png");
+}
+
+.img-2 {
+  background-image: url("./assets/img/pictures/2-first-column-second-item.png");
+}
+
+.img-3 {
+  background-image: url("./assets/img/pictures/3-first-column-third-item.png");
+}
+
+.img-4 {
+  background-image: url("./assets/img/pictures/4-second-column-first-item.png");
+}
+
+.img-5 {  
 }
 
 .first-column-first-item {

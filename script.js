@@ -148,20 +148,27 @@ const switchPortfolioTag = () => {
       let clickedTag = e.target;
       removeSelectedTag();
       selectClickedTag(clickedTag);
+      changePortfolioItem(clickedTag);
     }
   })
 }
 
 const removeSelectedTag = () => {
   let tags = document.querySelectorAll('.portfolio__buttons .button');  
-  tags.forEach( link => {    
-    link.classList.remove('button-selected');
+  tags.forEach( item => {    
+    item.classList.remove('button-selected');
   });
 }
 
 const selectClickedTag = (clickedTag) => { 
   clickedTag.classList.add('button-selected');
 }
+
+const changePortfolioItem = (clickedTag) => {
+  
+
+}
+
 
 //  Portfolio
 
@@ -177,14 +184,16 @@ const selectPortfolioItem = () => {
 
 const removeSelectedPortfolioItem = () => {
   let PortfolioItems = document.querySelectorAll('.four-columns .portfolio__column-item');  
-  PortfolioItems.forEach( link => {    
-    link.classList.remove('portfolio__column-item_selected');
+  PortfolioItems.forEach( item => {    
+    item.classList.remove('portfolio__column-item_selected');
   });
 }
 
 const selectClickedPortfolioItem = (clickedPortfolioItem) => { 
   clickedPortfolioItem.classList.add('portfolio__column-item_selected');
 }
+
+
 
 
 // console.log('All right 1 !!!');
