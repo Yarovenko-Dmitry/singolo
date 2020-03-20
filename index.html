@@ -16,126 +16,138 @@
         </div>
         <nav class="navigation">
           <ul class="main-menu">
-            <li><a href="" class="link-home">home</a><div class="point"></div></li>            
-            <li><a href="" class="link-services">services</a><div class="point"></div></li>            
-            <li><a href="" class="link-portfolio">portfolio</a><div class="point"></div></li>           
-            <li><a href="" class="link-about">about</a><div class="point"></div></li> 
-            <li><a href="" class="link-contact">contact</a></li>     
+            <li><a href="#home" class="main-menu__link main-menu__link_selected">home</a><div class="point"></div></li>            
+            <li><a href="#services" class="main-menu__link main-menu__link_unselected">services</a><div class="point"></div></li>            
+            <li><a href="#portfolio" class="main-menu__link main-menu__link_unselected">portfolio</a><div class="point"></div></li>           
+            <li><a href="#about-us" class="main-menu__link main-menu__link_unselected">about</a><div class="point"></div></li> 
+            <li><a href="#get-a-quote" class="main-menu__link main-menu__link_unselected">contact</a></li>     
           </ul>
         </nav>
       </div>
+      <div class="header__head-fake"></div>
+      <a class="anchor" name="home"></a>
       <div class="header__bottom block-bottom"></div>
     </div>
   </header>
   <main>
     <div class="slider">
       <div class="wrapper">
-        <div class="slider__head">
-          <div class="arrow arrow_left"></div>
-          <div class="phone phone_vertical">
-            <div class="slider__frame vertical-frame">
-              <img class="img-vertical-screen" src="./assets/img/pictures/img-vertical-screen.png" alt="vertical-screen">
-            </div>          
+        <div class="wrapperSlider">
+          <div class="slider__head slider__slide-first active">
+            <!-- <div class="arrow arrow_left"></div> -->
+            <div class="phone phone_vertical">
+              <div class="slider__frame vertical-frame">
+                <img class="img-vertical-screen" src="./assets/img/pictures/img-vertical-screen.png" alt="vertical-screen">
+              </div>          
+            </div>
+            <div class="phone-shadow phone-shadow_vertical"></div>
+            <div class="phone phone_horizontal">
+              <div class="slider__frame horizontal-frame">
+                <img class="img-horizontal-screen" src="./assets/img/pictures/img-horizontal-screen.png" alt="vertical-screen">
+              </div>  
+            </div>
+            <div class="phone-shadow phone-shadow_horizontal"></div>
+            <!-- <div class="arrow arrow_right"></div> -->
+          </div>        
+          <div class="slider__head slider__slide-second">            
           </div>
-          <div class="phone-shadow phone-shadow_vertical"></div>
-          <div class="phone phone_horizontal">
-            <div class="slider__frame horizontal-frame">
-              <img class="img-horizontal-screen" src="./assets/img/pictures/img-horizontal-screen.png" alt="vertical-screen">
-            </div>  
-          </div>
-          <div class="phone-shadow phone-shadow_horizontal"></div>
-          <div class="arrow arrow_right"></div>
-        </div>       
-        <div class="slider__bottom block-bottom"></div>
+        </div>
+        <div class="arrow arrow_left"></div>
+        <div class="arrow arrow_right"></div>                 
+        <div class="slider__bottom block-bottom slider__bottom_first"></div>
       </div>
     </div>
+    <a class="anchor" name="services"></a>
     <div class="services">
       <div class="wrapper">
-        <div class="services__head">
-          <div class="services__title">
-            <h2 class="services__h2 h2">Our Services</h2>
-          </div>          
-          <div class="services__description">
-            <p class="services__description-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          </div>
-          <div class="advantages-section three-columns">           
-            <div class="advantages-column">             
-              <div class="advantage-box">
-                <div class="advantage-box__icon icon_pen"></div>
-                <div class="advantage-box__description">
-                  <div class="advantage-box__title title_pen">
-                    <p>Custom Design</p>
-                  </div>
-                  <div class="advantage-box__text text_pen">
-                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="advantage-box advantage-box_bottom">
-                <div class="advantage-box__icon icon_phone"></div>
-                <div class="advantage-box__description">
-                  <div class="advantage-box__title">
-                    <p>Responsive Layout</p>
-                  </div>
-                  <div class="advantage-box__text">
-                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
-                  </div>
-                </div>
-              </div>
+        <div class="wrapper_services">
+          <div class="services__head">
+            <div class="services__title">
+              <h2 class="services__h2 h2">Our Services</h2>
+            </div>          
+            <div class="services__description">
+              <p class="services__description-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             </div>
-            <div class="advantages-column advantages-column_center">              
+            <div class="advantages-section three-columns">           
+              <div class="advantages-column">             
                 <div class="advantage-box">
-                  <div class="advantage-box__icon icon_bulb"></div>
+                  <div class="advantage-box__icon icon_pen"></div>
+                  <div class="advantage-box__description">
+                    <div class="advantage-box__title title_pen">
+                      <p>Custom Design</p>
+                    </div>
+                    <div class="advantage-box__text text_pen">
+                      <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="advantage-box advantage-box_bottom">
+                  <div class="advantage-box__icon icon_phone"></div>
                   <div class="advantage-box__description">
                     <div class="advantage-box__title">
-                      <p>Inovative Ideas</p>
+                      <p>Responsive Layout</p>
                     </div>
                     <div class="advantage-box__text">
-                      <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                      <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="advantages-column advantages-column_center">              
+                  <div class="advantage-box">
+                    <div class="advantage-box__icon icon_bulb"></div>
+                    <div class="advantage-box__description">
+                      <div class="advantage-box__title">
+                        <p>Inovative Ideas</p>
+                      </div>
+                      <div class="advantage-box__text">
+                        <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                      </div>
+                    </div>
+                  </div>              
+                  <div class="advantage-box advantage-box_bottom">
+                    <div class="advantage-box__icon icon_bubble"></div>
+                    <div class="advantage-box__description">
+                      <div class="advantage-box__title">
+                        <p>24 / 7 Support</p>
+                      </div>
+                      <div class="advantage-box__text">
+                        <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                      </div>
+                    </div>
+                  </div>              
+              </div>
+              <div class="advantages-column advantages-column_right">              
+                <div class="advantage-box">
+                  <div class="advantage-box__icon icon_heart"></div>
+                  <div class="advantage-box__description">
+                    <div class="advantage-box__title">
+                      <p>Love Is The Answer</p>
+                    </div>
+                    <div class="advantage-box__text">
+                      <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     </div>
                   </div>
                 </div>              
                 <div class="advantage-box advantage-box_bottom">
-                  <div class="advantage-box__icon icon_bubble"></div>
+                  <div class="advantage-box__icon icon_star"></div>
                   <div class="advantage-box__description">
                     <div class="advantage-box__title">
-                      <p>24 / 7 Support</p>
+                      <p>Feel Like A Star</p>
                     </div>
                     <div class="advantage-box__text">
-                      <p>Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                      <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
                   </div>
                 </div>              
-            </div>
-            <div class="advantages-column advantages-column_right">              
-              <div class="advantage-box">
-                <div class="advantage-box__icon icon_heart"></div>
-                <div class="advantage-box__description">
-                  <div class="advantage-box__title">
-                    <p>Love Is The Answer</p>
-                  </div>
-                  <div class="advantage-box__text">
-                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-                  </div>
-                </div>
-              </div>              
-              <div class="advantage-box advantage-box_bottom">
-                <div class="advantage-box__icon icon_star"></div>
-                <div class="advantage-box__description">
-                  <div class="advantage-box__title">
-                    <p>Feel Like A Star</p>
-                  </div>
-                  <div class="advantage-box__text">
-                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
-                  </div>
-                </div>
-              </div>              
-            </div>
-          </div>            
+              </div>
+            </div>            
+          </div>
+          <div class="services__bottom block-bottom"></div>
         </div>
-        <div class="services__bottom block-bottom"></div>
       </div>        
     </div>
+    <a class="anchor" name="portfolio"></a>
     <div class="portfolio">
       <div class="wrapper">
         <div class="portfolio__head">
@@ -146,10 +158,10 @@
             <p class="portfolio__description-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
           </div>
           <div class="portfolio__buttons">
-            <input class="input input-all" type="submit" value="All">
-            <input class="input" type="submit" value="Web Design">
-            <input class="input" type="submit" value="Graphic Design">
-            <input class="input" type="submit" value="Artwork">
+            <button class="button button-selected" type="submit" value="All">All</button>
+            <button class="button" type="submit" value="Web Design">Web Design</button>
+            <button class="button" type="submit" value="Graphic Design">Graphic Design</button>
+            <button class="button" type="submit" value="Artwork">Artwork</button>
           </div>
           <div class="portfolio__work-examples">
             <div  class="portfolio__section four-columns">            
@@ -179,6 +191,7 @@
         <div class="portfolio__bottom block-bottom"></div>
       </div>
     </div>
+    <a class="anchor" name="about-us"></a>
     <div class="about-us">
       <div class="wrapper">
         <div class="about-us__head">
@@ -241,6 +254,7 @@
         <div class="about-us__bottom block-bottom"></div>
       </div>
     </div>
+    <a class="anchor" name="get-a-quote"></a>
     <div class="get-a-quote">
       <div class="wrapper">
         <div class="get-a-quote__head">
@@ -308,6 +322,7 @@
         <div class="footer__linkedin social-contact-item"></div>
       </div>
     </div>
-  </footer>  
+  </footer>
+  <script src="./script.js"></script> 
 </body>
 </html>
