@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-  <header class="header">
+  <header class="header section home">
     <div class="wrapper">
       <div class="header__head">
         <h1 class="h1">singolo</h1>
@@ -16,11 +16,11 @@
         </div>
         <nav class="navigation">
           <ul class="main-menu">
-            <li><a href="#home" class="main-menu__link main-menu__link_selected">home</a><div class="point"></div></li>            
-            <li><a href="#services" class="main-menu__link main-menu__link_unselected">services</a><div class="point"></div></li>            
-            <li><a href="#portfolio" class="main-menu__link main-menu__link_unselected">portfolio</a><div class="point"></div></li>           
-            <li><a href="#about-us" class="main-menu__link main-menu__link_unselected">about</a><div class="point"></div></li> 
-            <li><a href="#get-a-quote" class="main-menu__link main-menu__link_unselected">contact</a></li>     
+            <li><a href="#home" class="main-menu__link main-menu__link-home main-menu__link_selected">home</a><div class="point"></div></li>            
+            <li><a href="#services" class="main-menu__link main-menu__link-services main-menu__link_unselected">services</a><div class="point"></div></li>            
+            <li><a href="#portfolio" class="main-menu__link main-menu__link-portfolio main-menu__link_unselected">portfolio</a><div class="point"></div></li>           
+            <li><a href="#about-us" class="main-menu__link main-menu__link-about-us main-menu__link_unselected">about</a><div class="point"></div></li> 
+            <li><a href="#get-a-quote" class="main-menu__link main-menu__link-get-a-quote main-menu__link_unselected">contact</a></li>     
           </ul>
         </nav>
       </div>
@@ -30,7 +30,7 @@
     </div>
   </header>
   <main>
-    <div class="slider">
+    <div class="slider home section">
       <div class="wrapper">
         <div class="wrapperSlider">
           <div class="slider__head slider__slide-first active">
@@ -58,7 +58,7 @@
       </div>
     </div>
     <a class="anchor" name="services"></a>
-    <div class="services">
+    <div class="services section">
       <div class="wrapper">
         <div class="wrapper_services">
           <div class="services__head">
@@ -148,9 +148,9 @@
       </div>        
     </div>
     <a class="anchor" name="portfolio"></a>
-    <div class="portfolio">
+    <div class="portfolio section">
       <div class="wrapper">
-        <div class="portfolio__head">
+        <div class="portfolio__head ">
           <div class="portfolio__title">
             <h2 class="portfolio__h2 h2">Portfolio</h2>
           </div>
@@ -192,7 +192,7 @@
       </div>
     </div>
     <a class="anchor" name="about-us"></a>
-    <div class="about-us">
+    <div class="about-us section">
       <div class="wrapper">
         <div class="about-us__head">
           <div class="about-us__title">
@@ -255,7 +255,7 @@
       </div>
     </div>
     <a class="anchor" name="get-a-quote"></a>
-    <div class="get-a-quote">
+    <div class="get-a-quote section">
       <div class="wrapper">
         <div class="get-a-quote__head">
           <div class="get-a-quote__title">
@@ -323,6 +323,15 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal_hidden">
+    <div class="modal-popup">
+      <p class="modal-popup__result modal-info"></p>
+      <p class="modal-popup__subject-text modal-info"></p>
+      <p class="modal-popup__message-text modal-info"></p>
+      <button class="modal-popup__button">Ok</button>
+    </div>
+  </div>
+ 
   <script src="./script.js"></script> 
 </body>
 </html>
