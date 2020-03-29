@@ -33,8 +33,7 @@
     <div class="slider home section">
       <div class="wrapper">
         <div class="wrapperSlider">
-          <div class="slider__head slider__slide-first active">
-            <!-- <div class="arrow arrow_left"></div> -->
+          <div class="slider__head slider__slide-first active">            
             <div class="phone phone_vertical">
               <div class="slider__frame vertical-frame">
                 <img class="img-vertical-screen" src="./assets/img/pictures/img-vertical-screen.png" alt="vertical-screen">
@@ -46,8 +45,7 @@
                 <img class="img-horizontal-screen" src="./assets/img/pictures/img-horizontal-screen.png" alt="vertical-screen">
               </div>  
             </div>
-            <div class="phone-shadow phone-shadow_horizontal"></div>
-            <!-- <div class="arrow arrow_right"></div> -->
+            <div class="phone-shadow phone-shadow_horizontal"></div>            
           </div>        
           <div class="slider__head slider__slide-second">            
           </div>
@@ -164,29 +162,19 @@
             <button class="button" type="submit" value="Artwork">Artwork</button>
           </div>
           <div class="portfolio__work-examples">
-            <div  class="portfolio__section four-columns">            
-              <div class="portfolio__first-column portfolio__column">
-                <div class="first-column-first-item portfolio__column-item"></div>
-                <div class="first-column-second-item portfolio__column-item"></div>
-                <div class="first-column-third-item portfolio__column-item"></div>
-              </div>
-              <div class="portfolio__second-column portfolio__column">
-                <div class="second-column-first-item portfolio__column-item"></div>
-                <div class="second-column-second-item portfolio__column-item"></div>
-                <div class="second-column-third-item portfolio__column-item"></div>
-              </div>
-              <div class="portfolio__third-column portfolio__column">
-                <div class="third-column-first-item portfolio__column-item"></div>
-                <div class="third-column-second-item portfolio__column-item"></div>
-                <div class="third-column-third-item portfolio__column-item"></div>
-              </div>
-              <div class="portfolio__fours-column portfolio__column">
-                <div class="fours-column-first-item portfolio__column-item"></div>
-                <div class="fours-column-second-item portfolio__column-item"></div>
-                <div class="fours-column-third-item portfolio__column-item"></div>
-              </div>
-            </div>
-          </div>
+            <div class="first-column-first-item portfolio__column-item"></div>
+            <div class="first-column-second-item portfolio__column-item"></div>
+            <div class="first-column-third-item portfolio__column-item"></div>
+            <div class="second-column-first-item portfolio__column-item"></div>
+            <div class="second-column-second-item portfolio__column-item"></div>
+            <div class="second-column-third-item portfolio__column-item"></div>             
+            <div class="third-column-first-item portfolio__column-item"></div>
+            <div class="third-column-second-item portfolio__column-item"></div>
+            <div class="third-column-third-item portfolio__column-item"></div>             
+            <div class="fours-column-first-item portfolio__column-item"></div>
+            <div class="fours-column-second-item portfolio__column-item"></div>
+            <div class="fours-column-third-item portfolio__column-item"></div>              
+          </div>          
         </div>
         <div class="portfolio__bottom block-bottom"></div>
       </div>
@@ -267,10 +255,10 @@
           <div class="get-a-quote__feedback">
             <div class="form-box">
               <form class="feedback-form" action="URL" method="POST" target="URL">
-                <input class="feedback-form__name form-input" type="text" placeholder="Name (Required)" maxlength="30" required>
+                <input class="feedback-form__name form-input" type="text" placeholder="Name (Required)" maxlength="50" required>
                 <input class="feedback-form__email form-input" type="email" placeholder="Email (Required)" maxlength="30" required>
-                <input class="feedback-form__subject form-input" type="text" placeholder="Subject" maxlength="30" required>
-                <textarea class="feedback-form__textarea" rows="5" cols="30" placeholder="Describe your project in detail..." maxlength="500"></textarea> 
+                <input class="feedback-form__subject form-input" type="text" placeholder="Subject" maxlength="50" required>
+                <textarea class="feedback-form__textarea" rows="10" cols="30" placeholder="Describe your project in detail..." maxlength="500"></textarea> 
                 <input class="feedback-form__submit form-input" type="submit" value="Submit" placeholder="task">
               </form>
             </div>
@@ -327,7 +315,7 @@
     <div class="modal-popup">
       <p class="modal-popup__result modal-info"></p>
       <p class="modal-popup__subject-text modal-info"></p>
-      <p class="modal-popup__message-text modal-info"></p>
+      <p class="modal-info modal-popup__message-text"></p>
       <button class="modal-popup__button">Ok</button>
     </div>
   </div>

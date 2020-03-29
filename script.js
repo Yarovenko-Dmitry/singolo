@@ -15,17 +15,14 @@ window.onload = function() {
   //  Portfolio
 
   switchPortfolioTag();
-  selectPortfolioItem();
+  selectPortfolioItem(); 
 
   // Get a Quote
 
   submitForm();
-
-
 }
 
 // NavLinks
-
 
 const changeSelectionByScrolling = () => {
   document.addEventListener('scroll', onScroll);
@@ -176,7 +173,7 @@ const switchPortfolioTag = () => {
       let clickedTag = e.target;
       removeSelectedTag();
       selectClickedTag(clickedTag);
-      changePortfolioItem(clickedTag);
+      swapItems();
     }
   })
 };
@@ -192,11 +189,8 @@ const selectClickedTag = (clickedTag) => {
   clickedTag.classList.add('button-selected');
 };
 
-const changePortfolioItem = (clickedTag) => {
-};
-
 const selectPortfolioItem = () => {
-  document.querySelector('.four-columns').addEventListener('click', (e) => {
+  document.querySelector('.portfolio__work-examples').addEventListener('click', (e) => {
     if (e.target.classList.contains('portfolio__column-item')) {     
       let clickedPortfolioItem = e.target;
       removeSelectedPortfolioItem();
@@ -206,8 +200,8 @@ const selectPortfolioItem = () => {
 };
 
 const removeSelectedPortfolioItem = () => {
-  let PortfolioItems = document.querySelectorAll('.four-columns .portfolio__column-item');  
-  PortfolioItems.forEach( item => {    
+  let portfolioItems = document.querySelectorAll('.portfolio__work-examples .portfolio__column-item');  
+  portfolioItems.forEach( item => {    
     item.classList.remove('portfolio__column-item_selected');
   });
 };
@@ -216,6 +210,15 @@ const selectClickedPortfolioItem = (clickedPortfolioItem) => {
   clickedPortfolioItem.classList.add('portfolio__column-item_selected');
 };
 
+const swapItems = () => {
+  let portfolioSection = document.querySelector('.portfolio__work-examples'); 
+  let portfolioItems = document.querySelectorAll('.portfolio__work-examples .portfolio__column-item');
+  let arrPortfolioItems = Array.from(portfolioItems);
+  let shuffledPortfolioItems = arrPortfolioItems.sort(() => Math.random() - 0.5);
+
+  portfolioItems.forEach( item => { item.remove(); });    
+  shuffledPortfolioItems.forEach(el => { portfolioSection.appendChild(el); });
+};
 
 // Get a Quote
 
@@ -265,7 +268,3 @@ const submitForm = () => {
     modal.classList.add('modal_hidden');
   });
 };
-
-// console.log('All right 1 !!!');
-// console.log('All right 2 !!!');
-// console.log('All right 3 !!!');

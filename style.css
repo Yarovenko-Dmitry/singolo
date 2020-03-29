@@ -540,10 +540,11 @@ a:hover {
   outline: 0;
 }
 
-.portfolio__section {
+.portfolio__work-examples {
   width: 940px;
-  height: 601px;
+  height: 621px;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   top: 99px;
   left: 40px;
@@ -551,16 +552,9 @@ a:hover {
   overflow: hidden;
 }
 
-.portfolio__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
 .portfolio__column-item {  
   width: 220px;
-  height: 187px; 
+  height: 187px;
   overflow: hidden;
 }
 
@@ -659,14 +653,6 @@ a:hover {
   background-position-x: -36px;
   background-position-y: -60px; 
   background-image: url("./assets/img/pictures/12-fours-column-third-item.png");
-}
-
-.portfolio__column:nth-child(n+5){
-  display: none;
-}
-
-.portfolio__column-item:nth-child(n+4){
-  display: none;
 }
 
 .portfolio__bottom {  
@@ -1140,13 +1126,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 30%; 
-  height: 20%;   
+  max-height: 20%;   
   margin: 250px auto;
   padding: 5px;
   background-color: rgb(244, 140, 143);   
 }
 
-.modal-info {
+.modal-info {  
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
@@ -1155,6 +1141,11 @@ a:hover {
   overflow: hidden;
   text-overflow: clip;
   text-align: justify;
+}
+
+.modal-popup__result,
+.modal-popup__subject-text {
+  height: 32px;
 }
 
 .modal-popup__message-text {
