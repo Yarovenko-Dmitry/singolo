@@ -15,19 +15,18 @@ html {
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+  flex-direction: column;  
 }
 
 /***  header  ***/
 
 .header__head {
   display: flex;
-  width: 100%;
+  width: 100vw;
   max-width: 1020px;  
   height: 89px;
   position: fixed;
+  justify-content: space-between;
   background-color: #2d303a;
   z-index: 1000 ;  
 }
@@ -63,7 +62,7 @@ html {
 }
 
 .navigation {
-  padding-left: 436px;
+  /* padding-left: 436px; */
   padding-top: 32px;
 }
 
@@ -128,7 +127,8 @@ a:hover {
 
 .slider .wrapper{
   position: relative;
-  width: 100%;
+  height: 35vw;
+  max-height: 600px;
   overflow: hidden;
 }
 
@@ -169,22 +169,25 @@ a:hover {
 
 .arrow {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 15%;
+  width: 16px;
+  height: 27px;
+  top: calc((100% - 27px)/2); 
+  /* top: 50%;  */
   cursor: pointer;
+  background-image: url("./assets/img/pictures/chev.png");
+}
+
+.arrow:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .arrow_left {
-  left: 0;
-  right: auto;
-  margin-left: 484px;
+  left: 4%;  
 }
 
 .arrow_right {
-  right: 0;
-  left: auto;
-  margin-right: 481px;
+  right: 4%;  
 }
 
 .to-left {
@@ -221,18 +224,6 @@ a:hover {
   to {
     left: 0;
   }
-}
-
-.arrow {
-  width: 16px;
-  height: 27px;
-  margin-top: 281px;  
-  background-image: url("./assets/img/pictures/chev.png");
-}
-
-.arrow:hover {
-  cursor: pointer;
-  opacity: 0.5;
 }
 
 .phone {
@@ -379,17 +370,16 @@ a:hover {
 }
 
 .advantages-section {
+  width: 92%;
   position:relative;
   top: 143px;
   left: 41px;
-}
-
-.three-columns {
-  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantage-box {
   display: flex;
+  margin-top: 3%;
  }
 
 .advantage-box__icon {
@@ -451,9 +441,6 @@ a:hover {
   background-image: url("./assets/img/icon/6-bg-star.svg");
 }
 
-.advantage-box_bottom {
-  margin-top: 35px; 
-}
 
 .advantages-column_center {
   margin-left: 21px;
@@ -471,7 +458,7 @@ a:hover {
   display: flex;
   width: 100%;
   max-width: 1020px;
-  height: 863px;  
+  max-height: 863px;  
   flex-direction: column;
   align-content: center;
   align-items: flex-start;
@@ -497,7 +484,7 @@ a:hover {
 }
 
 .portfolio__description-text {
-  width: 940px;
+  max-width: 940px;
   height: 57px;
   font-size: 18px;
   line-height: 30px;
@@ -1162,3 +1149,56 @@ a:hover {
 .modal-popup__message-text {
   max-height: 144px;
 }
+
+@media (max-width: 1019px) {
+  .services__description-text {
+    max-width: 687px;
+    height: 99px;
+  }
+
+  .services__head {
+    height: 674px;    
+  }
+
+  .portfolio__description-text {
+    max-width: 695px;
+    height: 60px;    
+  }
+
+  .portfolio__head {    
+    max-height: 1097px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .services__description-text {
+    max-width: 314px;
+    height: 214px;
+  }
+
+  .services__head {
+    height: 1032px;    
+  }
+
+  .portfolio__description-text {
+    max-width: 315px;
+    height: 96px;    
+  }
+
+  .portfolio__head {    
+    max-height: 844px;
+  }
+
+}
+
+
+@media (max-width: 319px) {
+  .services__description-text {
+    max-width: 200px;
+    height: 400px;
+  }
+
+}
+
