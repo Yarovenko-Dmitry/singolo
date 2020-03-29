@@ -535,21 +535,33 @@ a:hover {
 }
 
 .portfolio__work-examples {
-  width: 940px;
-  height: 621px;
+  /* width: 940px;
+  height: 621px; */
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  top: 99px;
-  left: 40px;
+  /* top: 99px;
+  left: 40px; */
   justify-content: space-between;
   overflow: hidden;
+}
+
+.portfolio__column-item:nth-child(n+13){
+  display: none;
 }
 
 .portfolio__column-item {  
   width: 220px;
   height: 187px;
   overflow: hidden;
+  margin: 6px 20px 10px 0px;
+  flex: 1 0 20%;
+}
+
+.portfolio__column-item:before {  
+  content: '';
+  float: left;
+  padding-top: 87%;
 }
 
 .portfolio__column-item_selected {  
@@ -685,7 +697,7 @@ a:hover {
 }
 
 .about-us__description-text {
-  width: 940px;
+  max-width: 940px;
   height: 57px;
   font-size: 18px;
   line-height: 30px;
@@ -698,16 +710,14 @@ a:hover {
 }
 
 .about-us__employees-box {
-  width: 940px;
+  max-width: 940px;
   height: 442px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
   position: relative;
   top: 143px;
   left: 40px;  
-}
-
-.three-columns {
-  display: flex;
-  justify-content: space-between;
 }
 
 .employee-column {
@@ -716,6 +726,8 @@ a:hover {
   flex-direction: column;
   align-content: center;
   align-items: flex-start;
+  flex: 1 0 30%;
+  margin-right: 10px ;
 }
 
 .employee-column__photo {
@@ -841,7 +853,7 @@ a:hover {
 }
 
 .get-a-quote__description-text {
-  width: 940px;
+  max-width: 940px;
   height: 57px;
   font-size: 18px;
   line-height: 30px;
@@ -855,7 +867,7 @@ a:hover {
 
 .get-a-quote__feedback {
   display: flex;
-  width: 940px;
+  max-width: 940px;
   position: relative;
   top: 142px;
   left: 40px;
@@ -864,7 +876,7 @@ a:hover {
 
 .feedback-form {
   display: flex;
-  width: 619px;
+  max-width: 619px;
   height: 418px;
   flex-direction: column;
   align-content: center;
@@ -921,7 +933,7 @@ a:hover {
 
 .contact-information {
   display: flex;
-  width: 300px;
+  max-width: 300px;
   flex-direction: column;
   align-content: center;
   align-items: left;
@@ -1169,6 +1181,25 @@ a:hover {
     max-height: 1097px;
   }
 
+  .about-us__description-text {
+    max-width: 688px;
+    height: 100px;
+  }
+
+  .get-a-quote__description-text {
+    max-width: 689px;
+    height: 96px;
+  }
+
+  .contact-information {
+    max-width: 221px;
+  }
+
+  .feedback-form {
+    max-width: 442px;
+  }
+
+
 }
 
 
@@ -1189,6 +1220,28 @@ a:hover {
 
   .portfolio__head {    
     max-height: 844px;
+  }
+
+  .portfolio__column-item:nth-child(n+9){
+    display: none;
+  }
+
+  .about-us__description-text {
+    max-width: 315px;
+    height: 220px;
+  }
+
+  .get-a-quote__description-text {
+    max-width: 314px;
+    height: 214px;
+  }
+
+  .get-a-quote__feedback {
+    flex-wrap: wrap;
+  }
+
+  .contact-information {
+    max-width: 315px;
   }
 
 }
