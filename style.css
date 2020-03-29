@@ -12,7 +12,8 @@ html {
 
 .wrapper {
   display: flex;
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   margin: 0 auto;
   flex-direction: column;
   align-content: center;
@@ -23,7 +24,8 @@ html {
 
 .header__head {
   display: flex;
-  width: 1020px;  
+  width: 100%;
+  max-width: 1020px;  
   height: 89px;
   position: fixed;
   background-color: #2d303a;
@@ -107,7 +109,8 @@ a:hover {
 }
 
 .header__head-fake { 
-  width: 1020px;  
+  width: 100%;
+  max-width: 1020px;  
   height: 89px;   
 }
 
@@ -116,7 +119,8 @@ a:hover {
 }
 
 .block-bottom {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 6px;
 }
 
@@ -134,7 +138,8 @@ a:hover {
 
 .slider__head {
   display: none;
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 594px;  
   position: relative;
   animation: 0.2s ease-in-out;
@@ -326,7 +331,8 @@ a:hover {
 }
 
 .services__head {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 494px;
   display: flex;
   flex-direction: column;
@@ -463,7 +469,8 @@ a:hover {
 
 .portfolio__head {
   display: flex;
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 863px;  
   flex-direction: column;
   align-content: center;
@@ -660,7 +667,8 @@ a:hover {
 }
 
 .block-bottom {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 6px;
 }
 
@@ -668,7 +676,8 @@ a:hover {
 
 .about-us__head {
   display: flex;
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 728px;  
   flex-direction: column;
   align-content: center;
@@ -819,7 +828,8 @@ a:hover {
 
 .get-a-quote__head {
   display: flex;
-  width: 1020px;  
+  width: 100%;
+  max-width: 1020px;  
   height: 648px;  
   flex-direction: column;
   align-content: center;
@@ -1027,7 +1037,8 @@ a:hover {
 }
 
 .block-bottom {
-  width: 1020px;
+  width: 100%;
+  max-width: 1020px;
   height: 6px;
 }
 
