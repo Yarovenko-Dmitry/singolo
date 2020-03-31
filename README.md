@@ -15,7 +15,7 @@ I would like to note that I have submits to deadlines.
 I also have changes after the deadline. It was allowed by Sergey Shalyapin [(link)](https://www.youtube.com/watch?v=0M9Rz-wXYas&feature=youtu.be&t=5640).
 I hope for your goodwill and objectivity.
 I will also be grateful if you can give me code style tips.
-I think that according to the requirements of the task DOM everything was done, I tried.
+I think that according to the requirements of the task DOM everything was done, I tried. I did the responsive task  the first time in my life without burger.
 If you have any questions, please contact.
 My discord 
 ***Dmitry_Y (@ Yarovenko-Dmitry)***
