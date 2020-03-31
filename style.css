@@ -61,8 +61,7 @@ html {
   color: #f06c64;
 }
 
-.navigation {
-  /* padding-left: 436px; */
+.navigation {  
   padding-top: 32px;
 }
 
@@ -127,8 +126,7 @@ a:hover {
 
 .slider .wrapper{
   position: relative;
-  height: 59vw;
-  /* height: 35vw; */
+  height: 59vw; 
   max-height: 600px;
   overflow: hidden;
 }
@@ -142,8 +140,7 @@ a:hover {
   width: 100%;
   max-width: 1020px;
   height: 59vw;
-  max-height: 594px;
-  /* height: 594px;   */
+  max-height: 594px; 
   position: relative;
   animation: 0.2s ease-in-out;
   margin: 0 auto;
@@ -174,8 +171,7 @@ a:hover {
   position: absolute;
   width: 16px;
   height: 27px;
-  top: calc((100% - 27px)/2); 
-  /* top: 50%;  */
+  top: calc((100% - 27px)/2);  
   cursor: pointer;
   background-image: url("./assets/img/pictures/chev.png");
 }
@@ -233,11 +229,7 @@ a:hover {
   max-width: 218px;
   max-height: 461px;
   width: 22vw;
-  height: 46vw;
-  /* width: 21.4vw;
-  height: 45vw; */
-  /* width: 218px;
-  height: 461px; */
+  height: 46vw; 
   z-index: 100;
   background-image: url("./assets/img/pictures/cam.png");
   background-size: cover;
@@ -247,31 +239,21 @@ a:hover {
 .phone_vertical {
   position: relative;
   left: 12%;
-  top: 10%;
-  /* margin-top: 5%;
-  margin-left: 5%; */
-  /* left: 57px;
-  margin-top: 52px;
-  margin-left: 52px;    */
+  top: 10%;  
 }
 
 .slider__frame {
   max-width: 188px;
   max-height: 333px;
   width: 19vw;
-  height: 33vw;
-  /* width: 188px;
-  height: 333px; */
+  height: 33vw; 
   position: relative;
   overflow: hidden;
 }
 
 .vertical-frame {
   top: 14%;
-  left: 7.8%;
-  /* left: 8%;   */
-  /* top: 66px;
-  left: 16px;  */
+  left: 7.8%; 
 }
 
 .img-vertical-screen {
@@ -281,18 +263,14 @@ a:hover {
   max-width: 580px;
   max-height: 580px;
   width: 57vw;
-  height: 57vw;
-  /* top: -135px;
-  left: -14px; */
+  height: 57vw; 
 }
 
 .phone-shadow {
   max-width: 240px;
   max-height: 483px;
   width: 24vw;
-  height: 48vw;
-  /* width: 240px;
-  height: 483px; */
+  height: 48vw;  
   z-index: 50;
   position: relative;
   background-size: cover;  
@@ -301,26 +279,19 @@ a:hover {
 
 .phone-shadow_vertical {
   top: 10%;  
-  right: 9%;
-  /* top: 53px;
-  left: -159px; */
+  right: 9%; 
 }
 
 .phone_horizontal {
   position: relative;
   left: 11%;
   top: 9%; 
-  /* left: 59px; */
-  /* margin-top: 50px;
-  margin-left: -24px;   */
   transform: rotate(90deg);
 }
 
 .horizontal-frame {
   top: 14%;
-  left: 8%;
-  /* top: 66px;
-  left: 16px; */
+  left: 8%; 
 }
 
 .img-horizontal-screen {
@@ -330,17 +301,13 @@ a:hover {
   width: 57vw;
   height: 57vw;
   max-width: 580px;
-  max-height: 580px;
-  /* top: -122px;
-  left: -119px; */
+  max-height: 580px;  
   transform: rotate(-90deg);
 }
 
 .phone-shadow_horizontal {
   top: 10%;
-  right: 10%;
-  /* top: 53px;
-  left: -157px; */
+  right: 10%; 
   transform: scale(1, -1) rotate(90deg);
 }
 
@@ -348,7 +315,6 @@ a:hover {
   margin-left: -38px;
   transform: rotate(180deg);
 }
-
 
 .slider__bottom_first {
   background-color: #ea676b;
@@ -490,7 +456,6 @@ a:hover {
   background-image: url("./assets/img/icon/6-bg-star.svg");
 }
 
-
 .advantages-column_center {
   margin-left: 21px;
 }
@@ -507,8 +472,7 @@ a:hover {
   display: flex;
   width: 100%;
   max-width: 1020px;
-  height: 100%;
-  /* max-height: 863px;   */
+  height: 100%; 
   padding-top: 68px;
   flex-direction: column;
   align-content: center;
@@ -516,11 +480,7 @@ a:hover {
   background-color: #2d303a;
 }
 
-.portfolio__title {
-  /* height: 17px; */
-  /* position: relative;
-  top: 69px;
-  left: 40px; */
+.portfolio__title {  
   padding: 0 40px;
 }
 
@@ -531,10 +491,7 @@ a:hover {
 
 .portfolio__description {
   margin-top: 20px;
-  padding: 0 40px;
-  /* position: relative;
-  top: 96px;
-  left: 40px; */
+  padding: 0 40px; 
 }
 
 .portfolio__description-text {
@@ -554,10 +511,7 @@ a:hover {
   display: flex;
   width: 287px;
   height: 22px;  
-  padding: 0 38px;
-  /* position: relative;
-  top: 80px;
-  left: 41px; */
+  padding: 0 38px;  
   justify-content: space-between; 
 }
 
@@ -589,16 +543,11 @@ a:hover {
   outline: 0;
 }
 
-.portfolio__work-examples {
-  /* width: 940px;
-  height: 621px; */
+.portfolio__work-examples {  
   display: flex;
   flex-wrap: wrap;
   margin-top: 29px;
-  padding: 0 40px;
-  /* position: relative; */
-  /* top: 99px;
-  left: 40px; */
+  padding: 0 40px; 
   justify-content: space-between;
   overflow: hidden;
 }
@@ -606,13 +555,10 @@ a:hover {
 
 
 .portfolio__column-item {
-  width: 10vw;    
-  /* width: 220px;
-  height: 187px; */
+  width: 10vw; 
   overflow: hidden;
   margin: 6px 20px 10px 0px;
-  flex: 1 0 20%;
-  /* background-size: cover; */
+  flex: 1 0 20%; 
   background-repeat: no-repeat;
 }
 
@@ -705,9 +651,7 @@ a:hover {
 
 .third-column-third-item {
   background-position-x: -86px;
-  background-position-y: -160px;
-  /* background-position-x: -144px;
-  background-position-y: 237px; */
+  background-position-y: -160px;  
   background-image: url("./assets/img/pictures/9-third-column-third-item.png");
 }
 
@@ -781,8 +725,7 @@ a:hover {
   max-width: 940px;
   height: 442px;
   display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
+  flex-wrap: wrap; 
   position: relative;
   top: 143px;
   left: 40px;  
@@ -1261,7 +1204,7 @@ a:hover {
     max-width: 687px;
     height: 99px;
   }
-
+  
   .services__head {
     height: 674px;    
   }
@@ -1270,10 +1213,6 @@ a:hover {
     max-width: 695px;
     height: 60px;    
   }
-
-  /* .portfolio__head {    
-    max-height: 1097px;
-  } */
 
   .portfolio__column-item {
     margin: 6px 20px 10px 0px;    
@@ -1312,18 +1251,15 @@ a:hover {
 
   .feedback-form {
     display: flex;
-    height: 47vw;  
-    /* max-width: 619px;
-    max-height: 418px;
-    width: 60vw;
-    height: 45vw; */
-    /* height: 39vw; */
-    /* height: 418px; */
+    height: 47vw;   
     flex-direction: column;
     align-content: center;
     align-items: left;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
+  }
+
+  .feedback-form__submit {
+    width: 100%;
   }
 
   .contact-information__description {
@@ -1337,9 +1273,14 @@ a:hover {
     margin-top: 9%;
   }
 
+  .footer__copyright-text {
+    display: none;
+  }
 
+  .footer__social-contacts {
+   margin: auto;
+  }
 }
-
 
 @media (max-width: 767px) {
   .services__description-text {
@@ -1354,11 +1295,7 @@ a:hover {
   .portfolio__description-text {
     max-width: 315px;
     height: 96px;    
-  }
-
-  /* .portfolio__head {    
-    max-height: 844px;
-  } */
+  } 
 
   .portfolio__column-item {
     margin: 6px 20px 10px 0px;    
@@ -1398,15 +1335,13 @@ a:hover {
   .contact-information {
     max-width: 315px;
   }
-
 }
-
 
 @media (max-width: 319px) {
   .services__description-text {
     max-width: 200px;
     height: 400px;
+
   }
 
 }
-
