@@ -807,6 +807,8 @@ a:hover {
 
 
 .employee-column__photo {
+  max-width: 300px;
+  max-height: 300px;
   width: 30vw;
   height: 30vw;
   background-size: cover;
@@ -954,25 +956,29 @@ a:hover {
 .get-a-quote__feedback {
   display: flex;
   max-width: 940px;
+  width: 92vw;
   position: relative;
   top: 142px;
   left: 40px;
-  justify-content: space-between; 
+  justify-content: space-between;  
 }
 
 .feedback-form {
-  display: flex;
+  display: flex;  
   max-width: 619px;
-  height: 418px;
+  max-height: 418px;
+  height: 39vw;
+  /* height: 418px; */
   flex-direction: column;
   align-content: center;
   align-items: left;
   justify-content: space-between;
+  flex-basis: 60%; 
 }
 
 .form-input {
-  width: 604px;
-  height: 38px;
+  /* max-width: 604px;
+  max-width: 38px; */
   padding-left: 15px;  
   border-radius: 5px;
   background-color: #d6564f;
@@ -989,8 +995,8 @@ a:hover {
 }
 
 .feedback-form__textarea {  
-  width: 604px;
-  height: 195px;
+  /* max-width: 604px;
+  max-width: 195px; */
   padding-top: 7px;
   padding-left: 15px;
   font-size: 12px;
@@ -1023,6 +1029,8 @@ a:hover {
   flex-direction: column;
   align-content: center;
   align-items: left;
+  flex-basis: 35%;
+
 }
 
 .contact-information__title-text {
@@ -1280,11 +1288,15 @@ a:hover {
     margin: 6px 0px 10px 0px; 
   }
 
+  .employee-column {
+    width: calc((100% - 120px)/3);
+  }
+
   .about-us__description-text {
     max-width: 688px;
     height: 100px;
   }
-
+  
   .get-a-quote__description-text {
     max-width: 689px;
     height: 96px;
@@ -1296,6 +1308,33 @@ a:hover {
 
   .feedback-form {
     max-width: 442px;
+  }
+
+  .feedback-form {
+    display: flex;
+    height: 47vw;  
+    /* max-width: 619px;
+    max-height: 418px;
+    width: 60vw;
+    height: 45vw; */
+    /* height: 39vw; */
+    /* height: 418px; */
+    flex-direction: column;
+    align-content: center;
+    align-items: left;
+    justify-content: space-between;
+    
+  }
+
+  .contact-information__description {
+    position: relative;
+    top: 10px;  
+    width: 100%;
+    height: 110px;
+  }
+
+  .contact-data {
+    margin-top: 9%;
   }
 
 
